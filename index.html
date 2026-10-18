@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090611">
+  <meta name="description" content="LoveVerse AI — ভালোবাসা, গল্প আর মজার চ্যালেঞ্জের রোমান্টিক বাংলা জগৎ।">
+  <title>LoveVerse AI — ভালোবাসার অন্য এক মহাবিশ্ব</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="LoveVerse AI হোম"><span class="brand-icon">♡</span><span>LoveVerse <b>AI</b><small>ভালোবাসার অন্য এক মহাবিশ্ব</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন">☰</button>
+    <nav id="mainNav"><a href="#compatibility">লাভ ম্যাচ</a><a href="#letter">লাভ লেটার</a><a href="#anniversary">অ্যানিভার্সারি</a><a href="#truthdare">গেম</a><a href="#story">গল্প</a><a href="#friend">AI বন্ধু</a></nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> YOUR LITTLE UNIVERSE OF LOVE</div>
+        <h1>ভালোবাসার গল্পে<br> <span>তুমিই প্রধান চরিত্র</span></h1>
+        <p>হৃদয়ের কথা, মজার লাভ ম্যাচ আর কল্পনার রঙিন গল্প—সব এক জায়গায়। তোমার অনুভূতির জন্য তৈরি ছোট্ট এক ডিজিটাল মহাবিশ্ব।</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#compatibility">♡ লাভ ম্যাচ দেখো</a><a class="btn btn-ghost" href="#story">✧ গল্প বানাও</a></div>
+        <div class="hero-note"><span class="pulse-dot"></span> বাংলা • রোমান্টিক • মজার • তোমার জন্য</div>
+      </div>
+      <div class="hero-art" aria-label="রোমান্টিক হৃদয়ের অলংকরণ">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="heart-glow">♥</div><div class="float-heart fh-one">♡</div><div class="float-heart fh-two">♥</div><div class="float-star fs-one">✦</div><div class="float-star fs-two">✧</div>
+        <div class="art-caption"><span>✦</span><div><b>তোমার অনুভূতি</b><small>একটি সুন্দর গল্পের শুরু</small></div></div>
+      </div>
+    </section>
+
+    <section class="feature-intro"><div class="eyebrow">EXPLORE YOUR FEELINGS</div><h2>তোমার ভালোবাসার <span>পাঁচটি জগৎ</span></h2><p>একটু হাসি, একটু কল্পনা, আর অনেকটা হৃদয়ের রঙ।</p></section>
+
+    <section class="tool-grid">
+      <article class="tool-card" id="compatibility">
+        <div class="card-top"><div class="feature-icon pink">♡</div><span class="tag">LOVE METER</span></div>
+        <h3>লাভ কম্প্যাটিবিলিটি</h3><p class="muted">দুটি নামের মজার লাভ ম্যাচ স্কোর বের করো।</p>
+        <form id="matchForm" class="stack">
+          <label>তোমার নাম<input id="nameOne" maxlength="40" required placeholder="যেমন: রুবায়েত"></label>
+          <label>প্রিয় মানুষের নাম<input id="nameTwo" maxlength="40" required placeholder="যেমন: মেহের"></label>
+          <button class="btn btn-primary full" type="submit">♡ ম্যাচ হিসাব করো</button>
+        </form>
+        <div id="matchResult" class="result-box hidden" aria-live="polite"></div>
+        <p class="tiny">শুধুই বিনোদনের জন্য—এটি বাস্তব সম্পর্কের সামঞ্জস্য মাপে না।</p>
+      </article>
+
+      <article class="tool-card" id="prediction">
+        <div class="card-top"><div class="feature-icon purple">✧</div><span class="tag">COSMIC VIBES</span></div>
+        <h3>AI লাভ প্রেডিকশন</h3><p class="muted">তোমার বর্তমান অবস্থা বেছে নাও, কল্পনার বার্তা পাও।</p>
+        <label>তোমার অবস্থা<select id="loveStatus"><option value="single">Single — সিঙ্গেল</option><option value="crush">Crush আছে</option><option value="relationship">সম্পর্কে আছো</option><option value="complicated">জটিল অবস্থা</option></select></label>
+        <button id="predictBtn" class="btn btn-primary full">🔮 আমার কাল্পনিক বার্তা</button>
+        <div id="predictionResult" class="result-box hidden" aria-live="polite"></div>
+        <p class="tiny">এটি কল্পনাভিত্তিক বিনোদন, ভবিষ্যদ্বাণী নয়।</p>
+      </article>
+
+      <article class="tool-card" id="truthdare">
+        <div class="card-top"><div class="feature-icon orange">🎲</div><span class="tag">LET'S PLAY</span></div>
+        <h3>ট্রুথ অর ডেয়ার</h3><p class="muted">বন্ধুদের সঙ্গে মজার মুহূর্ত তৈরি করো।</p>
+        <label>গেমের ধরন<select id="gameMode"><option value="fun">Fun — মজার</option><option value="romantic">Romantic — রোমান্টিক</option><option value="playful">Playful — দুষ্টুমি</option></select></label>
+        <div class="button-row"><button class="btn btn-ghost" id="truthBtn">💬 Truth</button><button class="btn btn-ghost" id="dareBtn">⚡ Dare</button></div>
+        <button class="btn btn-primary full" id="randomChallenge">🎲 র‍্যান্ডম চ্যালেঞ্জ</button>
+        <div id="challengeResult" class="result-box challenge hidden" aria-live="polite"></div>
+      </article>
+
+      <article class="tool-card wide-card" id="story">
+        <div class="card-top"><div class="feature-icon pink">📖</div><span class="tag">STORY STUDIO</span></div>
+        <h3>AI লাভ স্টোরি জেনারেটর</h3><p class="muted">তোমাদের নাম দিয়ে বানাও একান্ত নিজের বাংলা গল্প।</p>
+        <div class="story-layout">
+          <div class="stack">
+            <label>প্রথম চরিত্রের নাম<input id="storyNameOne" maxlength="40" placeholder="যেমন: রুবায়েত"></label>
+            <label>দ্বিতীয় চরিত্রের নাম<input id="storyNameTwo" maxlength="40" placeholder="যেমন: মেহের"></label>
+            <label>গল্পের ধরন<select id="storyMode"><option value="romantic">💗 রোমান্টিক</option><option value="comedy">😂 কমেডি</option><option value="mystery">🌙 রহস্য</option><option value="emotional">💜 আবেগঘন</option></select></label>
+            <button id="generateStory" class="btn btn-primary full">✦ গল্প তৈরি করো</button>
+          </div>
+          <div class="story-output"><div class="output-label">তোমার গল্প <span id="storySource" class="tiny"></span></div><div id="storyText" class="story-text">এখানে তোমার গল্প ফুটে উঠবে… নাম দাও, ধরন বেছে নাও, তারপর গল্প তৈরি করো।</div><button id="copyStory" class="btn btn-ghost full" disabled>▣ গল্প কপি করো</button></div>
+        </div>
+      </article>
+
+      <article class="tool-card wide-card" id="friend">
+        <div class="card-top"><div class="feature-icon purple">💬</div><span class="tag">YOUR SAFE SPACE</span></div>
+        <h3>AI লাভ ফ্রেন্ড</h3><p class="muted">ক্রাশ, সম্পর্ক কিংবা মনের কথা—নির্ভয়ে লিখে ফেলো।</p>
+        <div class="chat-shell">
+          <div class="chat-heading"><div class="avatar">♡</div><div><b>লাভি — তোমার ভার্চুয়াল বন্ধু</b><small><span class="pulse-dot"></span> কথা বলার জন্য প্রস্তুত</small></div><button id="clearChat" class="clear-btn">মুছো</button></div>
+          <div id="chatMessages" class="chat-messages" aria-live="polite"><div class="bubble bot">হেই! 💜 আমি লাভি। আজ তোমার মনে কী চলছে? চাইলে ক্রাশ, সম্পর্ক বা যেকোনো অনুভূতি নিয়ে কথা বলতে পারো।</div></div>
+          <form id="chatForm" class="chat-compose"><input id="chatInput" maxlength="1200" placeholder="তোমার মনের কথা লিখো…" autocomplete="off" required><button class="send-btn" aria-label="বার্তা পাঠাও" type="submit">➤</button></form>
+          <div class="tiny chat-foot">তোমার কথোপকথন এই সেশনের জন্যই রাখা হয়। জরুরি বা বিপজ্জনক পরিস্থিতিতে বিশ্বস্ত মানুষ বা স্থানীয় জরুরি সহায়তার সঙ্গে যোগাযোগ করো।</div>
+        </div>
+        <p class="tiny">OpenAI API সেট না থাকলে সহানুভূতিশীল ডেমো উত্তর দেওয়া হবে—সেগুলো প্রকৃত AI উত্তর নয়।</p>
+      </article>
+    </section>
+
+    <section class="tool-grid extra-grid" aria-label="আরও ভালোবাসার টুল">
+      <article class="tool-card wide-card" id="letter">
+        <div class="card-top"><div class="feature-icon pink">💌</div><span class="tag">LOVE LETTER STUDIO</span></div>
+        <h3>AI লাভ লেটার জেনারেটর</h3><p class="muted">নাম, অনুভূতি আর টোন বেছে নাও—তৈরি করো মনের কথা।</p>
+        <div class="story-layout"><div class="stack">
+          <label>কার জন্য? <input id="letterTo" maxlength="50" placeholder="প্রিয় মানুষের নাম"></label>
+          <label>তোমার নাম (ঐচ্ছিক) <input id="letterFrom" maxlength="50" placeholder="তোমার নাম"></label>
+          <label>অনুভূতি <select id="letterMood"><option value="sweet">মিষ্টি ও কোমল</option><option value="deep">গভীর ও আবেগঘন</option><option value="apology">ক্ষমা চাওয়া</option><option value="confess">মনের কথা বলা</option><option value="birthday">জন্মদিনের শুভেচ্ছা</option></select></label>
+          <button id="makeLetter" class="btn btn-primary full">💌 চিঠি তৈরি করো</button>
+        </div><div class="story-output"><div class="output-label">তোমার চিঠি</div><div id="letterOutput" class="story-text">তোমার জন্য লেখা একটি চিঠি এখানে দেখা যাবে।</div><button id="copyLetter" class="btn btn-ghost full" disabled>▣ চিঠি কপি করো</button></div></div>
+      </article>
+      <article class="tool-card" id="anniversary">
+        <div class="card-top"><div class="feature-icon purple">🗓️</div><span class="tag">OUR TIMELINE</span></div><h3>লাভ অ্যানিভার্সারি কাউন্টার</h3><p class="muted">বিশেষ দিনের তারিখ দাও, কত দিন হলো জেনে নাও।</p>
+        <label>বিশেষ দিনের তারিখ<input id="anniversaryDate" type="date" required></label><button id="countDays" class="btn btn-primary full">দিন গুনে দেখো</button><div id="anniversaryResult" class="result-box hidden" aria-live="polite"></div><p class="tiny">তারিখটি শুধু এই ব্রাউজারে হিসাব করা হয়।</p>
+      </article>
+      <article class="tool-card" id="secret">
+        <div class="card-top"><div class="feature-icon pink">🔐</div><span class="tag">SECRET NOTE</span></div><h3>সিক্রেট লাভ মেসেজ</h3><p class="muted">মেসেজকে ইমোজি-কোডে বদলে বন্ধুকে পাঠাও।</p>
+        <label>তোমার মেসেজ<textarea id="secretInput" rows="3" maxlength="300" placeholder="তোমাকে একটা কথা বলতে চাই…"></textarea></label><div class="button-row"><button id="encodeSecret" class="btn btn-primary">কোড বানাও</button><button id="decodeSecret" class="btn btn-ghost">কোড খোলো</button></div><div id="secretOutput" class="result-box hidden" aria-live="polite"></div><p class="tiny">এটি মজার সাধারণ কোড, নিরাপদ এনক্রিপশন নয়।</p>
+      </article>
+      <article class="tool-card" id="quiz">
+        <div class="card-top"><div class="feature-icon orange">✨</div><span class="tag">SOULMATE QUIZ</span></div><h3>তোমার লাভ ল্যাঙ্গুয়েজ</h3><p class="muted">তুমি কীভাবে ভালোবাসা প্রকাশ করো, মজার কুইজে দেখো।</p>
+        <label>তুমি কোনটা বেশি পছন্দ করো?<select id="quizAnswer"><option value="words">মিষ্টি কথা ও প্রশংসা</option><option value="time">একসঙ্গে সময় কাটানো</option><option value="help">কাজে সাহায্য ও যত্ন</option><option value="gift">ছোট্ট উপহার</option><option value="touch">হাত ধরা বা আলিঙ্গন (দুজনের সম্মতিতে)</option></select></label><button id="runQuiz" class="btn btn-primary full">আমার ফল দেখাও</button><div id="quizResult" class="result-box hidden" aria-live="polite"></div>
+      </article>
+      <article class="tool-card" id="daily">
+        <div class="card-top"><div class="feature-icon purple">🌷</div><span class="tag">DAILY LOVE</span></div><h3>আজকের ছোট্ট চ্যালেঞ্জ</h3><p class="muted">আজকের দিনে একটু বেশি সদয় হও—নিজের প্রতিও।</p><div id="dailyChallenge" class="result-box">আজ নিজের জন্য ১০ মিনিট সময় রাখো—তোমার পছন্দের গান শোনো বা একটু হাঁটো। 💜</div><button id="newDaily" class="btn btn-ghost full">আরেকটি চ্যালেঞ্জ</button>
+      </article>
+      <article class="tool-card" id="favorites">
+        <div class="card-top"><div class="feature-icon pink">♡</div><span class="tag">MY LITTLE SPACE</span></div><h3>আমার পছন্দের লাইন</h3><p class="muted">একটি রোমান্টিক লাইন তৈরি করে পছন্দের তালিকায় রাখো।</p><div id="favoriteQuote" class="result-box">“ভালোবাসা মানে প্রতিদিন নতুন করে একে অপরকে বেছে নেওয়া।”</div><div class="button-row"><button id="newQuote" class="btn btn-ghost">নতুন লাইন</button><button id="saveQuote" class="btn btn-primary">♡ সেভ</button></div><div id="savedQuotes" class="saved-quotes" aria-live="polite"></div><p class="tiny">সেভ করা লাইন এই ডিভাইসের ব্রাউজারে থাকবে।</p>
+      </article>
+    </section>
+
+    <section class="quote-band"><div class="quote-mark">“</div><p>ভালোবাসা সবসময় নিখুঁত হওয়ার গল্প নয়,<br><span>এটা একে অপরকে বুঝতে শেখার গল্প।</span></p><div class="quote-spark">✦ ✧ ♡</div></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">♡ LoveVerse AI</a><p>কল্পনা, অনুভূতি আর ভালোবাসার ছোট্ট এক মহাবিশ্ব।</p><div class="footer-credit">Made with 💜 by <a href="https://www.facebook.com/share/1Ezh5b6AJR/" target="_blank" rel="noopener noreferrer">Owner NJR RUBAYET</a></div><small>© <span id="year"></span> LoveVerse AI • বিনোদন ও সৃজনশীলতার জন্য</small></footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
